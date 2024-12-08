@@ -16,7 +16,7 @@ section {
       /* Espacamento entre as letras */
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--brand-color);
+      color: var(--brand-color-primary);
     }
 
     & h2 {

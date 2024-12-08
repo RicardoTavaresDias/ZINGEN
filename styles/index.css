@@ -10,3 +10,4 @@
 /* Aqui voce já defini o tamanho de tela já na importação do CSS quando chegar o tamanho de tela de 1280px que é 80em*/
 @import url(features.css) (width >= 80em);
 @import url(pricing.css);
+@import url(download.css);
