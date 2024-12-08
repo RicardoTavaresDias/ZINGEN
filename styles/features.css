@@ -1,0 +1,81 @@
+
+#features {
+  & .cards {
+    /* 4 colunas com 1fr flexivel e 17.5rem fixos */
+    grid-template-columns: 17.5rem 1fr 1fr 17.5rem;
+    /* criado 2 linhas de 25rem fixos */
+    grid-template-rows: 25rem 25rem;
+    gap: 2rem;
+  }
+
+  & .card {
+    position: relative;
+    overflow: hidden;
+
+    & img.desktop-only {
+      position: absolute;
+      max-width: 15rem;
+      /* colocar efeito na imagem, drop-shadow defini sombra, obs 4rem é espalhamento da sombra */
+      filter: drop-shadow(1rem 1rem 4rem rgb(0 0 0 / 0.34));
+    }
+  }
+
+  & .card:nth-child(1) {
+    grid-column: 1/2;
+  }  
+
+  & .card:nth-child(2) {
+    /* no card no vai ocupar na linha 2 e vai ate a linha 4 */
+    grid-column: 2/4;
+
+    /* definido a largura maximo para o texto não invadir a imagem do celular grande do desktop */
+    & > div {
+      max-width: 16rem;
+    }
+
+    & .desktop-only {
+      bottom: 2rem;
+      right: 2rem;
+    }
+  }
+
+  & .card:nth-child(3) {
+    grid-column: 4/5;
+  }
+
+  & .card:nth-child(4) {
+    /* no card no vai ocupar na linha 2 e vai ate a linha 4 */
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+    /* definido a largura maximo para o texto não invadir a imagem do celular grande do desktop */
+    & > div {
+      max-width: 16rem;
+      /* Aqui vai colocar o texto para o lado direito */
+      margin-left: auto;
+    }
+
+    & .desktop-only {
+      bottom: 2rem;
+      right: 2rem;
+      /* Aqui vai colocar a imagem para o lado esquerdo */
+      left: 2rem;
+    }
+  }
+
+  & .card:nth-child(5) {
+    /* no card no vai ocupar na linha 2 e vai ate a linha 4 */
+    grid-column: 3/5;
+    grid-row: 2/3;
+
+    /* definido a largura maximo para o texto não invadir a imagem do celular grande do desktop */
+    & > div {
+      max-width: 16rem;
+    }
+
+    & .desktop-only {
+      top: 2rem;
+      right: 2rem;
+    }
+  }
+}

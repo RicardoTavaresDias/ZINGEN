@@ -6,3 +6,6 @@
 @import url(hero.css);
 @import url(sections.css);
 @import url(about.css);
+@import url(cards.css);
+/* Aqui voce já defini o tamanho de tela já na importação do CSS quando chegar o tamanho de tela de 1280px que é 80em*/
+@import url(features.css) (width >= 80em);
