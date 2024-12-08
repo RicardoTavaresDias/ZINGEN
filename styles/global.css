@@ -83,6 +83,18 @@ a {
   color: inherit;
 }
 
+a:hover {
+  background: linear-gradient(
+    90deg,
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
+  );
+
+  --webkit-backgroud-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Tira a definição da ul de lista para navegador, e quando usar UL no html usar role="list" o navegador vai interpretar como lista. Se não colocar role="list" o navegador não vai tirar as definições da lista, conclusão, para remover list-style usar role="list"  */
 ul[role="list"] {
   list-style: none;
