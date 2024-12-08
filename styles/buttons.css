@@ -1,0 +1,78 @@
+
+.btn {
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--bg-color);
+
+  border: 0; /*remove borda*/
+  background-color: transparent; /*remove backgroud*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*a largura dele fit que dizer que ele vai se encaixar no btn*/
+  width: fit-content; 
+
+  border-radius: 0.5rem;
+  /* --fw-md - peso da fonte, --fs-base - tamanho da fonte com espaçamento 1.5rem e font-famyily - tipo de fonte */
+  font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
+
+  cursor: pointer;
+
+  background: var(--btn-bg-color);
+  color: var(--btn-color);
+}
+
+.btn:hover {
+  /* linear-gradient - é a função de fundo degrader, 90d - 90garus, var(--brand-color-secondary) 0% de 0 dessa cor até var(--brand-color-primary) 100% dessa cor */
+  --btn-bg-color: linear-gradient(90deg,
+  var(--brand-color-secondary) 0%,
+  var(--brand-color-primary) 100%);
+
+  --btn-color: var(--surface-color); 
+}
+
+
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-sm);
+}
+
+.btn-md{
+  padding: 0.75rem 1.5rem;
+  font-size: var(--fs-base);
+}
+
+.btn-lg{
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Todos os botões que tiver aria-label será executado */
+.btn[aria-label] {
+  position: relative;
+  /* borda do botão */
+  &::before {
+    content: "";
+    position: absolute;
+    /* a borda vai pegar já definido na class .btn */
+    border-radius: inherit;
+    /* inset se for 0 todo o botão vai pegar backgroud-color definido a baixo e se colocar 1.5px (0.09375rem) vai ficar somente a borda definido no .btn:hover  */
+    inset: 0.09375rem;
+    background-color: var(--bg-color);
+  }
+
+  /* texto interno */
+  &::after {
+    /* attr é vai pegar atributo que é area-Label */
+    content: attr(aria-label);
+    background:  var(--btn-bg-color);
+    /* compartibilidade de navegadores */
+    --webkit-backgroud-clip: text;
+    /* clip realiza recorte no texto, para somente o texto ter a cor que será definido no texto == A propriedade CSS background-clip especifica se o fundo de um elemento, seja cor ou imagem, se extende debaixo de sua área de borda, preenchimento ou conteúdo. */
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+}
