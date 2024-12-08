@@ -11,7 +11,7 @@ section {
   & header {
     & strong {
       display: block;
-      /* --fw-md - peso da fonte, --fs-sm - tamanho da fonte com 100% e font-famyily - tipo de fonte */
+      /* --fw-md - peso da fonte, --fs-sm - tamanho da fonte com 100% e --ff-sn - é font-family */
       font: var(--fw-md) var(--fs-sm)/100% var(--ff-sn);
       /* Espacamento entre as letras */
       letter-spacing: 0.08em;

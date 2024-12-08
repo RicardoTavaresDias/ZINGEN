@@ -13,7 +13,7 @@
   }
 
   & p {
-    /* --fw-md - peso da fonte, --fs-lg - tamanho da fonte com espaçamento 1.4rem e font-famyily - tipo de fonte */
+    /* --fw-md - peso da fonte, --fs-lg - tamanho da fonte com espaçamento 1.4 e --ff-sans - é font-family */
     font: var(--fw-md) var(--fs-lg)/1.4 var(--ff-sans);
     color: var(--text-color-secondary);
     margin-top: 0.5rem;

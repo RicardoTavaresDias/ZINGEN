@@ -13,7 +13,7 @@
   width: fit-content; 
 
   border-radius: 0.5rem;
-  /* --fw-md - peso da fonte, --fs-base - tamanho da fonte com espaçamento 1.5rem e font-famyily - tipo de fonte */
+  /* --fw-md - peso da fonte, --fs-base - tamanho da fonte com espaçamento 1.5rem e --ff-sans - é font-family */
   font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
 
   cursor: pointer;
@@ -65,8 +65,8 @@
     position: absolute;
     /* a borda vai pegar já definido na class .btn */
     border-radius: inherit;
-    /* inset se for 0 todo o botão vai pegar backgroud-color definido a baixo e se colocar 1.5px (0.09375rem) vai ficar somente a borda definido no .btn:hover  */
-    inset: 0.09375rem;
+    /* inset se for 0 todo o botão vai pegar backgroud-color definido a baixo e se colocar 1px vai ficar somente a borda definido no .btn:hover  */
+    inset: 2px;
     background-color: var(--bg-color);
   }
 
