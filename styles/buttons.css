@@ -29,6 +29,14 @@
   var(--brand-color-primary) 100%);
 
   --btn-color: var(--surface-color); 
+
+  /* compartibilidade de navegadores */
+  --webkit-backgroud-clip: initial;
+  /* clip realiza recorte no texto, para somente o texto ter a cor que será definido no texto == A propriedade CSS background-clip especifica se o fundo de um elemento, seja cor ou imagem, se extende debaixo de sua área de borda, preenchimento ou conteúdo. 
+  
+  Initial segnifical voltar original */
+  background-clip: initial;
+  color: var(--btn-color);
 }
 
 
@@ -75,4 +83,19 @@
     position: relative;
     z-index: 1;
   }
+}
+
+
+@media (width >= 80em) {
+  
+  .btn-sm{
+    padding: 0.75rem 1.5rem;
+    font-size: var(--fs-base);
+  }
+  
+  .btn-md{
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
+
 }

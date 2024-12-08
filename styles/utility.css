@@ -32,7 +32,7 @@
   width: calc(100% - val(--fs-lg) * 2); */
 
   margin-inline: auto;
-  border: solid red;
+  /* border: solid blueviolet; */
 }
 
 
@@ -51,8 +51,16 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .gap-1 {
   gap: 1rem;
+}
+
+.gap-1\.5 {
+  gap: 1.5rem;
 }
 
 .grid {

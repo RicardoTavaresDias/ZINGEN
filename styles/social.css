@@ -6,7 +6,11 @@ a.social {
   height: 1.5rem;
   display: block;
 
+  /* compartibilidade de navegadores */
   --webkit-backgroud-clip: initial;
+   /* clip realiza recorte no texto, para somente o texto ter a cor que será definido no texto == A propriedade CSS background-clip especifica se o fundo de um elemento, seja cor ou imagem, se extende debaixo de sua área de borda, preenchimento ou conteúdo. 
+   
+   Initial segnifical voltar original */
   background-clip: initial;
 
   /* Todos os botões que tiver aria-label será executado */

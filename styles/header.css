@@ -1,0 +1,7 @@
+
+header {
+  /* first-child vai pegar o primeiro a e vai deixar margin para direita automatico afastando os demais links "a" */
+  & a:first-child {
+    margin-right: auto;
+  }
+}
