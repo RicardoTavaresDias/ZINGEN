@@ -55,6 +55,9 @@ html {
   color: var(--text-color-primary);
 
   overflow-x: hidden;
+
+  /* scroll fica suave a muvimentação da pagina ao pertar os links Conheça o app, Funcionalidades e Planos e preços na navegação NAV */
+  scroll-behavior: smooth;
 }
 
 body {
