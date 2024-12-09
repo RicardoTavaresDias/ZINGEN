@@ -43,11 +43,12 @@
   }
 
   & .separator {
-    height: 1px;
+    height: 1.3px;
     margin-block: 2rem;
-    background-color: #A1A1AA;
-    /* background: radial-gradient(var(--text-color-secondary), var(--surface-color) 
-    70%); */
+   
+    /* Aqui vai fazer o separador ter inicio e fim da cor de fundo e no meio cinza que da efeito bacana */
+    background: radial-gradient(var(--text-color-secondary), var(--surface-color) 
+    70%);
   }
 
   & li {
