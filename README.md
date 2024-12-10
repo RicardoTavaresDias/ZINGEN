@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Voce pode visualizar o projeto pronto projeto através [DESSE LINK]()
+Voce pode visualizar o projeto pronto projeto através [DESSE LINK](https://ricardotavaresdias.github.io/ZINGEN/)
 O ZINGEN - Landing Page de aplicativo é um agregador de ensino na Rocketseat para avançar o conhecimento em HTML e CSS. Nesse modulo foi aplicado o conceito do Resposividade nos dispositivo web e mobile.
 
 ## 🔖 Layout
